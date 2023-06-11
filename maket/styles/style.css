@@ -21,6 +21,7 @@ a {
 
 header {
     background-color: #F1FDFF;
+    overflow: hidden;
 }
 
 .navigation {
@@ -77,6 +78,10 @@ h3 {
     border-radius: 87px;
 }
 
+article {
+    margin-top: 50px;
+}
+
 article p {
     font-size: 16px;
     font-weight: inherit;
@@ -108,6 +113,20 @@ article {
     
 }
 
+table {
+    
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 50px;
+}
+
+td {
+    font-size: 60px;
+    font-weight: 100;
+    border: 1px solid black;
+}
+
+
 footer {
     background-color: #F9FADF;
 }
@@ -127,8 +146,4 @@ h4 {
     font-size: 46px;
     font-weight: inherit;
     line-height: 120%;
-}
-
-.field- {
-
 }

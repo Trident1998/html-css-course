@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -15,6 +19,10 @@ body {
     background-color: white;
 }
 
+.button-nav {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -22,10 +30,25 @@ a {
 header {
     background-color: #F1FDFF;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .navigation {
     font-size: 18px;
+    z-index: 1;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 50px;
+    z-index: 1;
+}
+
+.logo {
+    padding-right: 570px;
+    padding-left:35px;
 }
 
 .main-slogan {
@@ -35,31 +58,62 @@ header {
     align-items: center;
 }
 
-#hero-img {
-    grid-column: 2;
-    grid-row: 1/span 2;
+.main-slogan img {
+    margin-left: 480px;
+    grid-row: 1;
+    grid-column: -1/1;
+    margin-top: -100px;
+    
+}
+
+.main-slogan div {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 100px;
+    margin-top: -100px;
+    text-align: left;
+}
+
+.main-slogan p {
+    width: 485px;
+    font-size: 20px;
 }
 
 main {
-    font-weight: normal
+    font-weight: normal;
+    width: 1240px;
+    margin: 0 auto;
 }
 
 h1 {
     color: #9AD2DE;
     font-size: 93px;
     line-height: 95%;
+    font-weight: 800;
+    margin: 60px 0;
 }
 
 h2 {
     font-size: 60px;
     font-weight: inherit;
     line-height: 120%;
+    margin: 20px;
 }
 
 h3 {
-    font-size: 27px;
+    font-size: 46px;
     font-weight: inherit;
     line-height: 120%;
+}
+
+.first-message {
+    margin-top: 160px;
+    margin-bottom: 80px;
+}
+
+.first-message .style2 {
+    width: 590px;
+    margin: 0 auto;
 }
 
 .style1 {
@@ -71,7 +125,7 @@ h3 {
     color: #73A6B1;
 }
 
-.button {
+.button, .button-nav {
     font-size: 18px;
     background-color: #7AE5FD;
     padding: 21px 35px;
@@ -79,54 +133,111 @@ h3 {
 }
 
 article {
-    margin-top: 50px;
-    margin-bottom: 25px;
+    background-color: #F1FDFF;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
 }
 
 article p {
     font-size: 16px;
     font-weight: inherit;
+    margin-bottom: 10px 0;
 }
 
-article time {
-    font-size: 16px;
-    font-weight: inherit;
-    color: #3D8C9D;
+article h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
-.main-slogan p {
+article h3, article p, .time {
+    text-align: left;
+}
+
+#subtext {
     font-size: 20px;
 }
 
-article {
-    background-color: #F1FDFF;
+.time {
+    font-size: 16px;
+    font-weight: inherit;
+    color: #3D8C9D;
+    margin-bottom: 40px 0;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
 }
 
 .free-T-shirt {
+    margin: 40px;
     font-size: 28px;
-    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.background {
+    grid-column: 1;
+    grid-row: 1;
 }
 
 #empty-space {
     width: 1240px;
     height: 280px;
     background-color: #F1FDFF;
-    
+    grid-column: 1;
+    grid-row: 1;    
 }
 
-table {
-    
-    margin-left: auto; 
-    margin-right: auto;
-    padding: 50px;
+.t-shirt {
+    grid-column: 1;
+    grid-row: 1;    
+    z-index: 1;
+    margin-left: 670px;
+    padding-right: 130px;
 }
 
-td {
+.free-T-shirt .style1 {
+    grid-column: 1;
+    grid-row: 1;    
+    z-index: 1;
+    width: 395px;
+    justify-self: left;
+    text-align: left;
+    margin-left: 50px;
+    line-height: 120%;    
+}
+
+.charity ul {
+    margin-bottom: 80px;
+}
+
+.charity p {
+    width: 740px;
+    margin: 0 auto;
+}
+
+.charity .style1 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.charity li {
+    display: inline-block;
     font-size: 60px;
-    font-weight: 100;
-    border: 1px solid black;
+    padding: 0px 15px;
+
 }
 
+.number + .number {
+    border-left: 1px solid #9AD2DE;
+}
 
 footer {
     background-color: #F9FADF;
